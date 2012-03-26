@@ -27,8 +27,6 @@ module system (
    wire [15:0] 	fsmc_dat_i;
    wire [15:0] 	fsmc_dat_o;
    wire 	fsmc_ne1, fsmc_nwe, fsmc_noe, fsmc_nbl1, fsmc_nbl0;
-   
-   
    wire [23:0] 	wb_adr_o;
    wire [31:0] 	wb_dat_o;
    wire [31:0] 	wb_dat_i;
