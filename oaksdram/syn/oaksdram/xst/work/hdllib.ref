@@ -1,9 +1,0 @@
-MO afifo NULL ../../afifo.v vlg4D/afifo.bin 1332782943
-MO sdram NULL ../../sdram.v vlg0B/sdram.bin 1332782944
-MO GrayCounter NULL ../../graycounter.v vlg7F/_gray_counter.bin 1332782943
-MO sdram_clkgen NULL ../../sdram_clkgen.v vlg26/sdram__clkgen.bin 1332782943
-MO sdram_read NULL ../../sdram_read.v vlg06/sdram__read.bin 1332782943
-MO sdram_write NULL ../../sdram_write.v vlg29/sdram__write.bin 1332782943
-MO wb_sdram NULL ../../wb_sdram.v vlg13/wb__sdram.bin 1332782944
-MO system NULL ../../system.v vlg19/system.bin 1332782944
-MO fsmc_module NULL ../../fsmc.v vlg72/fsmc__module.bin 1332782944

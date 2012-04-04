@@ -1,6 +1,0 @@
-set -tmpdir "/home/jessb/Projects/hdl/oaksdram/syn/oaksdram/xst/projnav.tmp"
-set -xsthdpdir "/home/jessb/Projects/hdl/oaksdram/syn/oaksdram/xst"
-elaborate
--lso "/home/jessb/Projects/hdl/oaksdram/syn/oaksdram/system.lso"
--ifn system.prj
--ifmt mixed
