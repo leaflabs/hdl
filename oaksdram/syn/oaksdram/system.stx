@@ -1,0 +1,60 @@
+Release 12.1 - xst M.53d (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/jessb/Projects/hdl/oaksdram/syn/oaksdram/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/jessb/Projects/hdl/oaksdram/syn/oaksdram/xst
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../graycounter.v" in library work
+Compiling verilog file "../../sdram_write.v" in library work
+Compiling verilog include file "../../sdram_include.v"
+Module <GrayCounter> compiled
+Compiling verilog file "../../sdram_read.v" in library work
+Compiling verilog include file "../../sdram_include.v"
+Module <sdram_write> compiled
+Compiling verilog file "../../sdram_clkgen.v" in library work
+Module <sdram_read> compiled
+Compiling verilog file "../../afifo.v" in library work
+Module <sdram_clkgen> compiled
+Compiling verilog file "../../sdram.v" in library work
+Compiling verilog include file "../../sdram_include.v"
+Module <afifo> compiled
+Compiling verilog file "../../wb_sdram.v" in library work
+Module <sdram> compiled
+Compiling verilog file "../../fsmc.v" in library work
+Module <wb_sdram> compiled
+Compiling verilog file "../../system.v" in library work
+Module <fsmc_module> compiled
+Module <system> compiled
+No errors in compilation
+Analysis of file <"system.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+
+
+Total memory usage is 132448 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

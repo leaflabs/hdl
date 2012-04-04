@@ -1,0 +1,77 @@
+Release 12.1 - xst M.53d (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/jessb/Projects/hdl/oaksdram/syn/oaksdram/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/jessb/Projects/hdl/oaksdram/syn/oaksdram/xst
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../graycounter.v" in library work
+Compiling verilog file "../../sdram_write.v" in library work
+Compiling verilog include file "../../sdram_include.v"
+Module <GrayCounter> compiled
+Compiling verilog file "../../sdram_read.v" in library work
+Compiling verilog include file "../../sdram_include.v"
+Module <sdram_write> compiled
+Compiling verilog file "../../sdram_clkgen.v" in library work
+Module <sdram_read> compiled
+Compiling verilog file "../../afifo.v" in library work
+Module <sdram_clkgen> compiled
+Compiling verilog file "../../sdram.v" in library work
+Compiling verilog include file "../../sdram_include.v"
+Module <afifo> compiled
+ERROR:HDLCompilers:28 - "../../sdram.v" line 105 'write_ready' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 141 'read_ready' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 142 'write_ready' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 144 'read_command' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 145 'write_command' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 151 'read_ready' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 152 'read_command' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 154 'write_ready' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 155 'write_command' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 167 'read_phy_addr' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 168 'read_phy_bank' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 169 'write_phy_addr' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 170 'write_phy_bank' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 173 'read_data_mask' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 174 'write_data_mask' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 179 'write_data_mask' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 183 'read_phy_addr' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 184 'read_phy_bank' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 185 'read_data_mask' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 188 'write_phy_addr' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 189 'write_phy_bank' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 190 'write_data_mask' has not been declared
+ERROR:HDLCompilers:28 - "../../sdram.v" line 195 'write_data_mask' has not been declared
+Compiling verilog file "../../wb_sdram.v" in library work
+Module <sdram> compiled
+Compiling verilog file "../../system.v" in library work
+Module <wb_sdram> compiled
+ERROR:HDLCompilers:26 - "../../system.v" line 17 unexpected token: 'sdr_we_n'
+ERROR:HDLCompilers:207 - "../../system.v" line 36 Signal 'fsmc_nbl0' is not referenced in the module port list
+ERROR:HDLCompilers:207 - "../../system.v" line 39 Signal 'sdr_we_n' is not referenced in the module port list
+Module <system> compiled
+Analysis of file <"top.prj"> failed.
+--> 
+
+
+Total memory usage is 132180 kilobytes
+
+Number of errors   :   26 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,30 @@
+Command line:
+   wb_sdram_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50566
+
+Mon Mar 26 11:11:21 2012
+
+
+ Elaboration Time: 0.06 sec
+
+ Current Memory Usage: 117.424 Meg
+
+ Total Signals          : 200
+ Total Nets             : 487
+ Total Signal Drivers   : 131
+ Total Blocks           : 20
+ Total Primitive Blocks : 14
+ Total Processes        : 254
+ Total Traceable Variables  : 296
+ Total Scalar Nets and Variables : 23754
+Total Line Count : 1366
+Total Line Count : 1366
+
+ Total Simulation Time: 0.19 sec
+
+ Current Memory Usage: 125.817 Meg
+
+Mon Mar 26 11:12:58 2012
+
