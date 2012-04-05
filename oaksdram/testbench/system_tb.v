@@ -45,17 +45,14 @@ module system_tb;
 	fsmc_nwe = 1'b0;
 	fsmc_a = 16'h0000;
 	tmp_fsmc_d = 16'hAAAA;
-	$display("Done writing, pause.");
 	#5000;
       	fsmc_ne1 = 1'b1;
 	fsmc_nwe = 1'b1;
 	tmp_fsmc_d = 16'bz;
-	$display("Done pausing, resume.");
-  
 	#5000;
 	fsmc_ne1 = 1'b0;
 	fsmc_nwe = 1'b0;
-       	fsmc_a = 16'h0001;
+       	fsmc_a = 16'h0111;
 	tmp_fsmc_d = 16'h5555;
  	#5000;
 	fsmc_ne1 = 1'b1;
@@ -70,8 +67,8 @@ module system_tb;
 	fsmc_ne1 = 1'b1;
 	fsmc_noe = 1'b1;
 	fsmc_nwe = 1'b1;
-	
-	
+	$finish;
+		
 
      end // initial begin
 
