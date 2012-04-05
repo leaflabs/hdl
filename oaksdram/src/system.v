@@ -16,13 +16,13 @@ module system (
 
 	       sdr_we_n,
 	       sdr_clk,
-	       sdr_dm[1:0],
+	       sdr_dm,
 	       sdr_cs_n,
-	       sdr_a[11:0],
+	       sdr_a,
 	       sdr_ras_n,
-	       sdr_dq[15:0],
+	       sdr_dq,
 	       sdr_cas_n,
-	       sdr_ba[1:0],
+	       sdr_ba,
 	       sdr_cke
 	       );
 

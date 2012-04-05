@@ -1,7 +1,8 @@
 VERILOGEX = .v # Verilog file extension
 
 # testbench path TESTBENCH is passed from the command line
-TESTBENCHPATH = testbenches/${TESTBENCH}$(VERILOGEX)
+TESTBENCH = system_tb
+TESTBENCHPATH = testbench/${TESTBENCH}$(VERILOGEX)
 SOURCEPATH = src
 
 #iverilog CONFIG
@@ -46,7 +47,7 @@ new :
  
 compile : testbench_check
 	mkdir -p simulation                                                                                                             
-	$(VERILOG_CMD) -o  $(SIMDIR)/$(TESTBENCH) $(TESTBENCHPATH) $(SOURCEPATH)/*                              
+	$(VERILOG_CMD) -I$(SOURCEPATH) -o  $(SIMDIR)/$(TESTBENCH) $(TESTBENCHPATH) $(SOURCEPATH)/*                              
  
  
 run : testbench_check
@@ -56,5 +57,5 @@ run : testbench_check
 view : testbench_check                                                                                              
 	$(WAVEFORM_VIEWER)  $(SIMDIR)/$(TESTBENCH).$(DUMPTYPE)                                               
  
-clean : test_bench_check                                                                                                 
+clean : testbench_check                                                                                                 
 	rm $(SIM_DIR)/$(TESTBENCH)*
