@@ -183,7 +183,7 @@ always @ (posedge clk) begin
 				if (~rd_fifo_empty) begin
 				//	$display("user reading %h", wbs_dat_o);
 					fifo_rd	<=	1;
-					wbs_ack_o <= 1;
+				#20	wbs_ack_o <= 1;
 				end
 			end
 		end
