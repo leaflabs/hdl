@@ -263,7 +263,7 @@ module sdram_read (
 		       //						if (column	== 8'h00) begin
 		       //next state will activate a new row
 		       //							$display ("sdram_read: go to ACTIVATE state");
-		       state	<= ACTIVATE;
+		       state	<= IDLE;
 		       //						end
 		       //						else begin
 		       //the command for read has already
