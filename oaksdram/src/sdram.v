@@ -92,7 +92,8 @@ module sdram (
 
    wire [15:0] 				data_out;
 
-      //instantiate the read state machine
+   //instantiate the read state machine
+   wire 				read_reading;
    wire [2:0] 				read_command;
    wire [11:0] 				read_phy_addr;
    wire [1:0] 				read_phy_bank;
@@ -102,6 +103,7 @@ module sdram (
    wire [1:0] 				read_bank;
 
    //instantiate the read state machine
+   wire 				write_writing; 				
    wire [2:0] 				write_command;
    wire [11:0] 				write_phy_addr;
    wire [1:0] 				write_phy_bank;
@@ -109,7 +111,7 @@ module sdram (
 
    wire 				write_ready;
    wire [1:0] 				write_bank;
-      
+   
    reg					sdram_reset = 1;
    reg					init_cke;
    reg					init_cs_n;
@@ -182,7 +184,9 @@ module sdram (
    always @ (
 	     sdram_ready, 
 	     read_en, 
-	     write_en, 
+	     write_en,
+	     write_writing,
+	     read_reading,
 	     read_phy_addr, 
 	     read_phy_bank,
 	     write_phy_addr, 
@@ -198,12 +202,12 @@ module sdram (
 	 data_mask	<=	write_data_mask;
       end
       else begin
-	 if (read_en) begin
+	 if (read_reading) begin
 	    addr		<=	read_phy_addr;
 	    bank		<=	read_phy_bank;
 	    data_mask	<=	read_data_mask;
 	 end
-	 else if (write_en) begin
+	 else if (write_writing) begin
 	    addr		<=	write_phy_addr;
 	    bank		<=	write_phy_bank;
 	    data_mask	<=	write_data_mask;
@@ -290,6 +294,7 @@ module sdram (
 			 .clk(sdram_clk),
 
 			 //SDRAM PHY I/O
+			 .writing(write_writing),
 			 .command(write_command),
 			 .addr(write_phy_addr),
 			 .bank(write_phy_bank),
@@ -314,6 +319,7 @@ module sdram (
 			.clk(sdram_clk),
 
 			//SDRAM PHY I/O
+			.reading(read_reading),
 			.command(read_command),
 			.addr(read_phy_addr),
 			.bank(read_phy_bank),
