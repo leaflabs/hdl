@@ -60,7 +60,7 @@ module system_tb;
 	#50000;
 	fsmc_ne1 = 1'b0;
 	fsmc_noe = 1'b0;
-	fsmc_a = 16'h1000;
+	fsmc_a = 16'hAAAA;
        	tmp_fsmc_d = 16'bz;
 	#50000;
 	fsmc_ne1 = 1'b1;
