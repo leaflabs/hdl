@@ -186,7 +186,7 @@ data_mask	<=	2'b00;
 data_mask	<=	2'b00;
 //data_out	<=	16'h5678;
 					state			<=	PRECHARGE;
-					delay			<=	0;
+					delay			<=	`T_WR;
 //					if (!lfifo_empty & !lauto_refresh) begin
 //						state	<=	PRECHARGE;
 		//				if (column	==	8'h00) begin

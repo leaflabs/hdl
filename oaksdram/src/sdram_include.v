@@ -90,6 +90,8 @@
 `define T_PLL	11000
 //MODE Register Set
 `define T_MRD	2
+//WRITE recovery time
+`define T_WR 2
 
 //Auto Refresh Timeout
 `define T_AR_TIMEOUT	6000000
